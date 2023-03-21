@@ -1,0 +1,1 @@
+# mecukuryurt.github.io
