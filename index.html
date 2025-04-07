@@ -5,12 +5,13 @@
 		<meta charset="utf-8">
 		
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
 		<script src="js/scripts.js" text="text/javascript"></script>
 	</head>
 	<body>
-		<nav>
+		<div>
 			<div id="navbardiv">
-				<table>
+				<table id="navbartable">
 					<tr>
 						<td>
 							<div class="container" onclick="myFunction(this)">
@@ -19,11 +20,11 @@
 								<div class="bar3"></div>
 							</div>
 						</td>
-						<td>
-							<div id="searchbar">searchbar</div>
+						<td> 
+							<div id="searchbar"><input type="search" id="searchinput" placeholder="&#128269; Suchen sie neue Nachrichten"></div>
 						</td>
 						<td rowspan="2" id="logo"><img src="images/logo.png" height="92"></td>
-						<td >
+						<td>
 							<table id="datetime">
 								<tr><td id="date"><b>19.02.2025</b></td></tr>
 								<tr><td id="clock"><b>22.52</b></td></tr>
@@ -32,6 +33,11 @@
 					</tr>
 				</table> 
 			</div>
-		</nav>
+			<div id="categories">
+				<a class="catga" href="pages/aktuelles.html">AKTUELLES</a>
+				<a class="catga" href="pages/wetterbericht.html">WETTERBERICHT</a>
+			</div>
+		</div>
+		
 	</body>
 </html>
