@@ -126,3 +126,60 @@ body {
     text-decoration: none;
     vertical-align: -webkit-baseline-middle;
 }
+
+#currencies {
+    border-radius: 10px;
+    border: 1px solid #000;
+
+    background: #000;
+    
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    
+    float:left;
+
+    position:absolute;
+    border-radius: 23px;
+    
+    top: 173px;
+    border-radius: 10px;
+
+    left:20px;
+    right:20px;
+
+    
+    min-height: 34px;
+
+
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Roboto Mono";
+    font-size: 15px;
+    font-style: normal;
+    
+
+    vertical-align: middle;
+    text-align: center;
+
+    overflow-x:auto;
+    white-space: nowrap;
+}
+
+#navbarclose {
+    z-index: 2;
+    background-color: white;
+    width: 100%;
+    position:fixed;
+    top:0;
+    border: #012169;
+    height: 160px;
+}
+
+#currencytext {
+    position:relative;
+    vertical-align: -webkit-baseline-middle;
+    text-align: center;
+}
+
+.inc {color:#00FF80;}
+.dec {color: #FF0000}
