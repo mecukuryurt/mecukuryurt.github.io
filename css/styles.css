@@ -9,16 +9,18 @@ body {
 
 #navbardiv {
     position: absolute;
+    z-index: 3;
 }
 
 #navbartable {
+    overflow-y:auto;
     position: fixed;
     background-color:  #012169;
     left:20px;
     right:20px;
     top: 25px;
     
-   
+    
     height: 92px;
     
     /*border: 2px solid black;
@@ -30,15 +32,11 @@ body {
 
 #logo {
     width: 100%;
-    vertical-align: middle;
-    
-    top: 50%;
-    /*text-align: center;*/
-    position: relative;
-    /*margin-left : calc (100% - 122px / 2);*/
-    text-align: center;
-    margin-right: 505px;
 }
+#logoobj {
+    margin-left: calc((100% - 307px)/2);
+}
+
 .container {
     display: inline-block;
     cursor: pointer;
@@ -93,10 +91,13 @@ body {
   }
 
 #categories {
+    overflow-x:auto;
+    white-space: nowrap;
+    float:left;
     position:fixed;
     border-radius: 23px;
     
-    margin-top: 128px;
+    top: 128px;
     border-radius: 10px;
     border: 1px solid #000;
     
@@ -109,7 +110,9 @@ body {
     right:20px;
 
     text-align: center;
-    height: 34px;
+    min-height: 34px;
+    text-indent: 10px, 10px;
+    z-index: 3;
 }
 .catga {
     color: #000;
