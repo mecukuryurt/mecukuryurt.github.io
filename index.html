@@ -9,26 +9,26 @@
 		<link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed" rel="stylesheet">
-		<script src="/js/scripts.js" text="text/javascript"></script>
 		<script src="/js/homepage.js" text="text/javascript"></script>
+		<script src="/js/scripts.js" text="text/javascript"></script>
 	</head>
 	<body>
+	<div id="navigation">
 		<div id="navbarclose"></div>
 		<div id="sidebarmenu">
 			<div id="sbmenusearch"><input type="search" id="sbmenusearchinput" placeholder="&#128269; Suchen sie neue Nachrichten"></div>
 			<br>
-			<a class="sbmca" href="/pages/aktuelles.html"		 >AKTUELLES</a> 		 </br>
-			<a class="sbmca" href="/pages/wetterbericht.html"	 >WETTERBERICHT</a> 	 </br>
-			<a class="sbmca" href="/pages/mun.html"				 >MUN</a>				 </br>
-			<a class="sbmca" href="/pages/frc.html"				 >FRC</a>				 </br>
-			<a class="sbmca" href="/pages/fll.html"				 >FLL</a>				 </br>
-			<a class="sbmca" href="/pages/olimpiaden.html"		 >OLIMPIADEN</a>		 </br>
-			<a class="sbmca" href="/pages/kulturangebot.html"	 >KULTURANGEBOT</a>		 </br>
-			<a class="sbmca" href="/pages/sportveranstaltung.html">SPORTVERANSTALTUNG</a> </br>
-			<a class="sbmca" href="/pages/screibern.html"		 >SCREIBERN</a>			</br>
-			<a class="sbmca" href="/pages/hochslaubsolventen.html">HOCHSLAUBSOLVENTEN</a> </br>
+			<a class="sbmca" href="/pages/aktuelles.html"		 >AKTUELLES</a> 		 <br>
+			<a class="sbmca" href="/pages/wetterbericht.html"	 >WETTERBERICHT</a> 	 <br>
+			<a class="sbmca" href="/pages/mun.html"				 >MUN</a>				 <br>
+			<a class="sbmca" href="/pages/robotik.html"			 >ROBOTIK</a>			 <br>
+			<a class="sbmca" href="/pages/seminare.html"		 >SEMINARE</a>			 <br>
+			<a class="sbmca" href="/pages/olimpiaden.html"		 >OLIMPIADEN</a>		 <br>
+			<a class="sbmca" href="/pages/aktivitaten.html"		 >AKTIVITATEN</a>		 <br>
+			<a class="sbmca" href="/pages/kulturangebot.html"	 >KULTURANGEBOT</a>		 <br>
+			<a class="sbmca" href="/pages/sportveranstaltung.html">SPORTVERANSTALTUNG</a> <br>
+			<a class="sbmca" href="/pages/screibern.html"		  >SCREIBERN</a>			<br>
 		</div>
-		<div>
 			<div id="navbardiv">
 				<table id="navbartable">
 					<tr>
@@ -45,8 +45,8 @@
 						<td rowspan="2" id="logo"><a href="/index.html"><img src="/images/logo2.png" height="50" id="logoobj"></td></a>
 						<td>
 							<table id="datetime">
-								<tr><td id="date"><b>19.02.2025</b></td></tr>
-								<tr><td id="clock"><b>22.52</b></td></tr>
+								<tr><td id="date"><b id="datenum">19.02.2025</b></td></tr>
+								<tr><td id="clock"><b id="timenum">22.52</b></td></tr>
 							</table>
 						</td>	
 					</tr>
@@ -56,16 +56,15 @@
 				<a class="catga" href="/pages/aktuelles.html"		 >AKTUELLES</a> 		 &nbsp;&nbsp;&nbsp;
 				<a class="catga" href="/pages/wetterbericht.html"	 >WETTERBERICHT</a> 	 &nbsp;&nbsp;&nbsp;
 				<a class="catga" href="/pages/mun.html"				 >MUN</a>				 &nbsp;&nbsp;&nbsp;
-				<a class="catga" href="/pages/frc.html"				 >FRC</a>				 &nbsp;&nbsp;&nbsp;
-				<a class="catga" href="/pages/fll.html"				 >FLL</a>				 &nbsp;&nbsp;&nbsp;
+				<a class="catga" href="/pages/robotik.html"			 >ROBOTIK</a>			 &nbsp;&nbsp;&nbsp;
+				<a class="catga" href="/pages/seminare.html"		 >SEMINARE</a>			 &nbsp;&nbsp;&nbsp;
 				<a class="catga" href="/pages/olimpiaden.html"		 >OLIMPIADEN</a>		 &nbsp;&nbsp;&nbsp;
+				<a class="catga" href="/pages/aktivitaten.html"		 >AKTIVITATEN</a>		 &nbsp;&nbsp;&nbsp;
 				<a class="catga" href="/pages/kulturangebot.html"	 >KULTURANGEBOT</a>		 &nbsp;&nbsp;&nbsp;
 				<a class="catga" href="/pages/sportveranstaltung.html">SPORTVERANSTALTUNG</a> &nbsp;&nbsp;&nbsp;
-				<a class="catga" href="/pages/screibern.html"		 >SCREIBERN</a>			 &nbsp;&nbsp;&nbsp;
-				<a class="catga" href="/pages/hochslaubsolventen.html">HOCHSLAUBSOLVENTEN</a> &nbsp;&nbsp;&nbsp;
+				<a class="catga" href="/pages/screibern.html"		  >SCREIBERN</a>			 &nbsp;&nbsp;&nbsp;
 				&nbsp;&nbsp;&nbsp;
 			</div>
-			<div>
 				<div id="currencies">
 					<a id="currencytext">
 						DOLLAR 36,10 				<font class="inc">%0,17</font> 
@@ -77,6 +76,7 @@
 						ZINSEN 44,66				<font class="inc">%0,08</font>
 					</a>
 				</div> 
+	</div>
 				<div id="carddiv">
 					<table id="card" align="center">
 						<tr>
@@ -144,8 +144,6 @@
 						</tr>
 					</table>
 				</div>
-			</div>
-		</div>
 		
 	</body>
 </html>

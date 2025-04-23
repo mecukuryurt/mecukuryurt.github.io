@@ -45,7 +45,7 @@
 .imgclass {
     border-radius: 22px;
     overflow: auto;
-    width: 537px;
+    max-width: 537px;
 }
 
 .heading {
