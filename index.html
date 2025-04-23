@@ -4,14 +4,30 @@
 		<title>Enka-Zeitung</title>
 		<meta charset="utf-8">
 		
-		<link rel="stylesheet" type="text/css" href="./css/styles.css">
+		<link rel="stylesheet" type="text/css" href="/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="/css/homepage.css">
 		<link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed" rel="stylesheet">
-		<script src="js/scripts.js" text="text/javascript"></script>
+		<script src="/js/scripts.js" text="text/javascript"></script>
+		<script src="/js/homepage.js" text="text/javascript"></script>
 	</head>
 	<body>
 		<div id="navbarclose"></div>
+		<div id="sidebarmenu">
+			<div id="sbmenusearch"><input type="search" id="sbmenusearchinput" placeholder="&#128269; Suchen sie neue Nachrichten"></div>
+			<br>
+			<a class="sbmca" href="/pages/aktuelles.html"		 >AKTUELLES</a> 		 </br>
+			<a class="sbmca" href="/pages/wetterbericht.html"	 >WETTERBERICHT</a> 	 </br>
+			<a class="sbmca" href="/pages/mun.html"				 >MUN</a>				 </br>
+			<a class="sbmca" href="/pages/frc.html"				 >FRC</a>				 </br>
+			<a class="sbmca" href="/pages/fll.html"				 >FLL</a>				 </br>
+			<a class="sbmca" href="/pages/olimpiaden.html"		 >OLIMPIADEN</a>		 </br>
+			<a class="sbmca" href="/pages/kulturangebot.html"	 >KULTURANGEBOT</a>		 </br>
+			<a class="sbmca" href="/pages/sportveranstaltung.html">SPORTVERANSTALTUNG</a> </br>
+			<a class="sbmca" href="/pages/screibern.html"		 >SCREIBERN</a>			</br>
+			<a class="sbmca" href="/pages/hochslaubsolventen.html">HOCHSLAUBSOLVENTEN</a> </br>
+		</div>
 		<div>
 			<div id="navbardiv">
 				<table id="navbartable">
@@ -26,7 +42,7 @@
 						<td> 
 							<div id="searchbar"><input type="search" id="searchinput" placeholder="&#128269; Suchen sie neue Nachrichten"></div>
 						</td>
-						<td rowspan="2" id="logo"><img src="images/logo2.png" height="50" id="logoobj"></td>
+						<td rowspan="2" id="logo"><a href="/index.html"><img src="/images/logo2.png" height="50" id="logoobj"></td></a>
 						<td>
 							<table id="datetime">
 								<tr><td id="date"><b>19.02.2025</b></td></tr>
@@ -37,16 +53,16 @@
 				</table> 
 			</div>
 			<div id="categories"> &nbsp;&nbsp;&nbsp;
-				<a class="catga" href="pages/aktuelles.html"		 >AKTUELLES</a> 		 &nbsp;&nbsp;&nbsp;
-				<a class="catga" href="pages/wetterbericht.html"	 >WETTERBERICHT</a> 	 &nbsp;&nbsp;&nbsp;
-				<a class="catga" href="pages/mun.html"				 >MUN</a>				 &nbsp;&nbsp;&nbsp;
-				<a class="catga" href="pages/frc.html"				 >FRC</a>				 &nbsp;&nbsp;&nbsp;
-				<a class="catga" href="pages/fll.html"				 >FLL</a>				 &nbsp;&nbsp;&nbsp;
-				<a class="catga" href="pages/olimpiaden.html"		 >OLIMPIADEN</a>		 &nbsp;&nbsp;&nbsp;
-				<a class="catga" href="pages/kulturangebot.html"	 >KULTURANGEBOT</a>		 &nbsp;&nbsp;&nbsp;
-				<a class="catga" href="pages/sportveranstaltung.html">SPORTVERANSTALTUNG</a> &nbsp;&nbsp;&nbsp;
-				<a class="catga" href="pages/screibern.html"		 >SCREIBERN</a>			 &nbsp;&nbsp;&nbsp;
-				<a class="catga" href="pages/hochslaubsolventen.html">HOCHSLAUBSOLVENTEN</a> &nbsp;&nbsp;&nbsp;
+				<a class="catga" href="/pages/aktuelles.html"		 >AKTUELLES</a> 		 &nbsp;&nbsp;&nbsp;
+				<a class="catga" href="/pages/wetterbericht.html"	 >WETTERBERICHT</a> 	 &nbsp;&nbsp;&nbsp;
+				<a class="catga" href="/pages/mun.html"				 >MUN</a>				 &nbsp;&nbsp;&nbsp;
+				<a class="catga" href="/pages/frc.html"				 >FRC</a>				 &nbsp;&nbsp;&nbsp;
+				<a class="catga" href="/pages/fll.html"				 >FLL</a>				 &nbsp;&nbsp;&nbsp;
+				<a class="catga" href="/pages/olimpiaden.html"		 >OLIMPIADEN</a>		 &nbsp;&nbsp;&nbsp;
+				<a class="catga" href="/pages/kulturangebot.html"	 >KULTURANGEBOT</a>		 &nbsp;&nbsp;&nbsp;
+				<a class="catga" href="/pages/sportveranstaltung.html">SPORTVERANSTALTUNG</a> &nbsp;&nbsp;&nbsp;
+				<a class="catga" href="/pages/screibern.html"		 >SCREIBERN</a>			 &nbsp;&nbsp;&nbsp;
+				<a class="catga" href="/pages/hochslaubsolventen.html">HOCHSLAUBSOLVENTEN</a> &nbsp;&nbsp;&nbsp;
 				&nbsp;&nbsp;&nbsp;
 			</div>
 			<div>
@@ -65,41 +81,41 @@
 					<table id="card" align="center">
 						<tr>
 							<td class="newstablecell">
-								<table class="newscard">
+								<a href="/pages/newstemplate.html" style="text-decoration: none;"><table class="newscard">
 									<tr><td><div>
-										<img src="images/einekatze.jpg" class="thumbnail">
+										<img src="/images/einekatze.jpg" class="thumbnail">
 									</div></td></tr>
 									<tr><td class="newtext">
-											eine katze fliegtet mit ein flugzeug
+										eine katze fliegtet mit ein flugzeug
 									</td></tr>
-								</table>
+								</table></a>
 							</td>
 							<td class="newstablecell">
-								<table class="newscard">
+								<a href="/pages/newstemplate.html" style="text-decoration: none;"><table class="newscard">
 									<tr><td><div>
-										<img src="images/einekatze.jpg" class="thumbnail">
+										<img src="/images/einekatze.jpg" class="thumbnail">
 									</div></td></tr>
 									<tr><td class="newtext">
-											eine katze fliegtet mit ein flugzeug
+										eine katze fliegtet mit ein flugzeug
 									</td></tr>
-								</table>
+								</table></a>
 							</td>
 							<td class="newstablecell">
-								<table class="newscard">
+								<a href="/pages/newstemplate.html" style="text-decoration: none;"><table class="newscard">
 									<tr><td><div>
-										<img src="images/einekatze.jpg" class="thumbnail">
+										<img src="/images/einekatze.jpg" class="thumbnail">
 									</div></td></tr>
 									<tr><td class="newtext">
-											eine katze fliegtet mit ein flugzeug
+										eine katze fliegtet mit ein flugzeug
 									</td></tr>
-								</table>
+								</table></a>
 							</td>
 						</tr>
 						<tr>
 							<td colspan="2">
 								<table style="margin-left: 35px;">
 									<tr><td colspan="10"><div>
-										<img src="images/einekatze.jpg" id="newsslider">
+										<a id="nsa"><img src="images/einekatze.jpg" id="newsslider"></a>
 									</div></td></tr>
 									<tr style="left: 35px;">
 										<td><div class="sliderbtnact" id="slb1">1</div></td>
