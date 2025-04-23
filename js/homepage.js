@@ -51,7 +51,10 @@ const newsimages = [
     "./pages/news/new10.html",
   ]
   
-  window.onload = function() {
+function newssliderfunction() {
+    document.getElementById("datenum").innerText = "23.04.2025";
+    document.getElementById("timenum").innerHTML = "211.10";
+    console.log("yay");
     const slbs = [];
     for (let i=0; i<10; i++) {
       slbs[i] = document.getElementById('slb' + (i+1));
@@ -86,3 +89,8 @@ const newsimages = [
   
 
   };
+
+window.onload = function() {
+  datetimeprep();
+  newssliderfunction();
+}

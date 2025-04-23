@@ -3,10 +3,14 @@ function myFunction(x) {
   document.getElementById("sidebarmenu").classList.toggle("sbmenuc");
 }
 
-window.onload = function() {
+function datetimeprep() {
   document.getElementById("datenum").innerText = "23.04.2025";
   document.getElementById("timenum").innerHTML = "211.10";
   console.log("yay");
+}
+
+window.onload = function() {
+  datetimeprep();
 }
 /*
 $(document).ready(function() {
