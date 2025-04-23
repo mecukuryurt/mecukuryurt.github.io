@@ -10,12 +10,35 @@
     }
 }
 
-.newscard {
+#card {
+    
+    top:222px;
+    position:absolute;
+    left:20px;
+    
     text-align: center;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    margin-right: auto;
+    margin-left: auto;
+
+    padding-left: 20px;
+}
+
+.newstablecell {
     padding-left: 35px;
     padding-right: 35px;
     padding-top: 35px;
     padding-bottom: 35px;
+}
+
+.newscard {
+    text-align: center;
+    
 }
 
 #carddiv {
@@ -30,4 +53,28 @@
     overflow:auto;
     width: 262px;
     height: 137px;
+}
+
+.newtext {
+    color: #000;
+
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-weight: bold;
+}
+
+.newtext {
+    color: #000;
+
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-weight: bold;
 }
