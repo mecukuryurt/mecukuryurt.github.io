@@ -272,7 +272,10 @@ body {
 
     overflow:auto;
 
-    margin-top: 12px
+    margin-top: 12px;
+    
+    transition: opacity 0.5s linear;
+    
 }
 
 .sliderbutton {
@@ -301,10 +304,46 @@ body {
     transition: 0.5s;
     margin-top: 15px;
 
-
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.sliderbutton:hover {
+.sliderbtnact {
+    fill: rgb(255, 255, 255);
+    stroke-width: 1px;
+    stroke: #000;
+    color:#FFF;
+    background-color: rgba(255, 0, 0, 0.849);
+    box-shadow: 0px 4px 4px 0px rgba(255, 0, 0, 0.849) inset;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.849));
+
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid rgb(0, 0, 0);
+
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 50%;
+
+    stroke-width: 2px;
+    stroke: red;
+
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: 0.5s;
+    margin-top: 15px;
+}
+
+.sliderbutton:hover, .sliderbtnact:hover{
     color:#FFF;
     background-color: rgba(255, 113, 113, 0.849);
     box-shadow: 0px 4px 4px 0px rgba(255, 113, 113, 0.849) inset;
