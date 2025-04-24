@@ -1,54 +1,54 @@
 
 const newsimages = [
-    "./pages/news/new1.jpg",
-    "./pages/news/new2.jpeg",
-    "./pages/news/new3.jpeg",
-    "./pages/news/new4.jpg",
-    "./pages/news/new5.jpg",
-    "./pages/news/new6.jpg",
-    "./pages/news/new7.jpeg",
-    "./pages/news/new8.jpeg",
-    "./pages/news/new9.jpg",
-    "./pages/news/new10.jpg",
+    "/pages/news/robotik/istanbulregional2.jpg",
+    "/pages/news/aktivitaten/gtüdünyamatematikgünügezisi.jpg",
+    "/pages/news/aktivitaten/mesleklergunu.jpg",
+    "/pages/news/mun/famunhollanda2.jpg",
+    "/pages/news/kulturell/karne1.dönem.jpg",
+    "/pages/news/kulturell/mehmetakifersoy.jpg",
+    "/pages/news/kulturell/ömürkurt2.jpg",
+    "/pages/news/mun/sekmunispanya1.jpg",
+    "/pages/news/kulturell/tevitölmünaz1.jpg",
+    "/pages/news/sportveranstaltung/tenis.jpg",
   ]
   
   const newsheading = [
-    "Ein fliegende katze darf mich essen nicht 1",
-    "new2",
-    "new3",
-    "new4",
-    "new5",
-    "new6",
-    "new7",
-    "new8",
-    "new9",
-    "new10",
+    "FRC Istanbul Regionaler Wettbewerb",
+    "Welttag der Mathematik",
+    "14. Berufstag",
+    "FAMUN Niederlande",
+    "1. Semester Schulzeugniszeremonie",
+    "Besuch des Mehmet Akif Ersoy Poesiemuseum",
+    "Gespräch mit Ömür Kurt",
+    "SEKMUN Spanien",
+    "TEVİTÖL-ENKA Debattenwettbewerb",
+    "Zwei Erfolge in Tennis",
   ]
   
   const newstext = [
-    "katzekatzekatzekatzekatzekatze 1",
-    "katzekatzekatzekatzekatzekatze 2",
-    "katzekatzekatzekatzekatzekatze 3",
-    "katzekatzekatzekatzekatzekatze 4",
-    "katzekatzekatzekatzekatzekatze 5",
-    "katzekatzekatzekatzekatzekatze 6",
-    "katzekatzekatzekatzekatzekatze 7",
-    "katzekatzekatzekatzekatzekatze 8",
-    "katzekatzekatzekatzekatzekatze 9",
-    "katzekatzekatzekatzekatzekatze 10",
+    "Unsere FRC (First Robotik Wettbewerb) Team, 6985 EnkaTech nehmte in die Istanbul Regionaler Wettbewerb teil.",
+    "Wir besuchten Technische Universität Gebze zum Weltmathematiktag mit Neuntklässlern.",
+    "Am Mittwoch, den 23. Februar halteten wir unsere 14. Berufstag ab.",
+    "Unsere 5 Schüler, Maide Kasal und Esra Atilla waren in 7. FAMUN Niederlande 2025. Gab es 350 Schüler weltweit.",
+    "Wir schließten den erste Zeitraum von 2024-2025 ab. Wir gratulieren unsere Schülern.",
+    "Wir besuchten Mehmet Akif Ersoy Poesiemuseum wegen 12 März.",
+    "Am 18 Dezember machten Neuntklässlern und Zehntklässlerin ein Gespräch mit Ömür Kurt.",
+    "Unsere 7 Schüler und Müge Demircan waren in SEKMUN Spanien. Es war in Villafranca del Castillo mit 500 weltweit Teilnehmer. Es ist eines der größten MUNs.",
+    "Am Dienstag, 11 März 2024 machten wir Debattenwettbewerb mit TEVİTÖL-Debattierclub.",
+    "Unsere Mädchen-Tennismannschaft erreichte den ersten Platz und Jungen-Tennismannschaft erreichte den dritten Platz in Kocaeli Tenniswettbewerb.",
   ]
   
   const linktonew = [
-    "./pages/news/new1.html",
-    "./pages/news/new2.html",
-    "./pages/news/new3.html",
-    "./pages/news/new4.html",
-    "./pages/news/new5.html",
-    "./pages/news/new6.html",
-    "./pages/news/new7.html",
-    "./pages/news/new8.html",
-    "./pages/news/new9.html",
-    "./pages/news/new10.html",
+    "/pages/news/robotik/regional.html",
+    "/pages/news/aktivitaten/welltagdermathematik.html",
+    "/pages/news/aktivitaten/berufstag.html",
+    "/pages/news/mun/famun.html",
+    "/pages/news/kulturell/semesterschulzeugnis.html",
+    "/pages/news/kulturell/mehmetakifersoy.html",
+    "/pages/news/kulturell/omurkurt.html",
+    "/pages/news/mun/sekmun.html",
+    "/pages/news/kulturell/debattenwettbewerbmittevitol.html",
+    "/pages/news/sportveranstaltung/tennis.html",
   ]
   
 function newssliderfunction() {
@@ -73,7 +73,7 @@ function newssliderfunction() {
         var textn = document.getElementById("newstext");
         image.src=newsimages[mynum];
         heading.innerHTML = newsheading[mynum];
-        textn.innerHTML = newstext[mynum] + "<a href=\"" + linktonew[mynum] + "\">read more</a>";
+        textn.innerHTML = newstext[mynum] + "<a href=\"" + linktonew[mynum] + "\">mehr lesen</a>";
         document.getElementById("nsa").href = linktonew[mynum];
       };
       
@@ -84,7 +84,7 @@ function newssliderfunction() {
         var textn = document.getElementById("newstext");
         image.src=newsimages[mynum];
         heading.innerHTML = newsheading[mynum];
-        textn.innerHTML = newstext[mynum] + " <a href=\"" + linktonew[mynum] + "\">read more</a>";
+        textn.innerHTML = newstext[mynum] + " <a href=\"" + linktonew[mynum] + "\">mehr lesen</a>";
         document.getElementById("nsa").href = linktonew[mynum];
   
 
