@@ -24,8 +24,6 @@ window.onload=function() {
         const avgtemp   =[];
         for (let i=0; i<WEATHERREPORTNUMBER; i++) {
             avgtemp[i]=(items["daily"]["temperature_2m_max"][i]+items["daily"]["temperature_2m_min"][i])/2;
-            
-
 
             let currow="";
             currow += 
@@ -39,7 +37,7 @@ window.onload=function() {
                 ;
                 rows[i].innerHTML = currow; 
         }
-
+        document.getElementById("theading").innerHTML="WETTERBERİCHT FÜR 7 TAGE";
     });
 }
 
