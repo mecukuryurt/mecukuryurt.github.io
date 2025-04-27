@@ -9,6 +9,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed" rel="stylesheet">
 		<script src="/js/scripts.js" text="text/javascript"></script>
+		<script src="/js/wetterbericht.js" text="text/javascript"></script>
 	</head>
 	<body>
 		<div id="navigation">
@@ -75,5 +76,25 @@
 						</a>
 					</div> 
 		</div>
-        <p style="margin-top: 220px; margin-left: 50px;">Ich weiß nicht auch.</p>
+		<div>
+			<table style="margin-top:255px;margin-left: 20px;text-align: center;" border="2">
+				<tr>
+					<th>Datum</th>
+					<th>Wetterlage</th>
+					<th>Durchschnittstemperatur</th>
+					<th>Windgeschwindigkeit</th>
+					<th>Windrichtung</th>
+					<th>Regen</th>
+					<th>Schnee</th>
+				</tr>
+				<tr id="t0"></tr>
+				<tr id="t1"></tr>
+				<tr id="t2"></tr>
+				<tr id="t3"></tr>
+				<tr id="t4"></tr>
+				<tr id="t5"></tr>
+				<tr id="t6"></tr>
+				<tr id="t7"></tr>
+			</table>
+		</div>
 </body>
