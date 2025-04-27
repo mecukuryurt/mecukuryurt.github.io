@@ -212,6 +212,13 @@ body {
     box-shadow: 10px 1px 5px 0px rgba(0, 0, 0, 0.25);  
     transition: 0.75s;
     padding-left: 14px;
+    
+}
+
+@media screen and (max-width: 640px) {
+    #sidebarmenu {
+        overflow: scroll;
+    }
 }
 
 .sbmenuc{
