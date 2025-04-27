@@ -32,10 +32,6 @@ function commonstartup () {
     }
   });
 
-  document.getElementById("gotomainpage").onclick = function() {
-    window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-  }
-
   loopfunc();
 }
 
@@ -57,11 +53,10 @@ function loopfunc() {
 
 }
 
-window.setInterval(loopfunc, 5000);
-
 window.onload = function() {
   datetimeprep();
   commonstartup();
+  window.setInterval(loopfunc, 5000);
 }
 /*
 $(document).ready(function() {
