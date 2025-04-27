@@ -1,8 +1,14 @@
 #maintable {
+    width: calc(100%-514px);
     margin-left: 257px;
     margin-right: 257px;
-    width: calc(100%-514px);
+    
     margin-top: 246px;
+    position: relative;
+}
+#maintable td {
+    /*border:2px solid black;*/
+    vertical-align: top;
 }
 
 .newstext {
@@ -13,6 +19,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    vertical-align: top;
 }
 
 @media screen and (max-width:1000px) and (min-width:500px) {
