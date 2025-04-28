@@ -30,14 +30,6 @@ body {
     border-radius: 12px;
 }
 
-#logo {
-    width: 100%;
-}
-#logoobj {
-    margin-left: calc((100% - 307px)/2);
-    cursor:pointer;
-}
-
 .container {
     display: inline-block;
     cursor: pointer;
@@ -208,9 +200,6 @@ body {
 @media screen and (max-width: 900px) {
     #searchbar{
       display: none;
-    }
-    #logo {
-        text-align: center;
     }
 }
 

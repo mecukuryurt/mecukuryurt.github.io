@@ -34,7 +34,7 @@ body {
     width: 100%;
 }
 #logoobj {
-    margin-left: calc((100% - 307px)/2);
+    margin-left: calc((100% - 40px)/2); /*calc((100% - 307px)/2)*/
 }
 
 .container {
@@ -73,6 +73,7 @@ body {
 #date {vertical-align: bottom; font-size: 20px;}
 
 #searchinput {
+    display:none;
     background-color: rgba(237, 237, 237, 0.51);
     border-radius: 27.5px;
     padding: 13px;
@@ -188,14 +189,20 @@ body {
     #searchbar{
       display: none;
     }
+    /*
     #logo {
         text-align: center;
     }
+        */
 }
 
 @media screen and (max-width: 500px) {
     #datetime {
         display: none;
+    }
+    #logoobj {
+        right: 50%;
+        margin-left: calc(50% - 89px);
     }
 }
 
@@ -215,7 +222,7 @@ body {
     
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-height: 640px) {
     #sidebarmenu {
         overflow: scroll;
     }
@@ -226,6 +233,7 @@ body {
 } 
 
 #sbmenusearchinput {
+    display: none;
     background-color: rgba(237, 237, 237, 0.51);
     border-radius: 27.5px;
 border: 1px solid #000;
