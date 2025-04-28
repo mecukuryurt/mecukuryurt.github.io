@@ -31,10 +31,39 @@ function commonstartup () {
       alert(input2.value + ". ich weiß es nicht. Bitte finden Sie es über Links.")
     }
   });
-
+  getCurrencies();
   loopfunc();
 }
 
+async function getCurrencies() {
+  let apilink = "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/"; // + currency + ".json";
+
+  let gold, dollar, euro, pfund, btc;
+
+  var tryres = await fetch(apilink+"try.json");
+  if (tryres.ok) {
+    let data = await tryres.json();
+    data = data["try"];
+    gold = (1/data["xau"]) / 31.10;
+    dollar    = (1/data["usd"]);
+    euro      = (1/data["eur"]);
+    pfund     = (1/data["gbp"]);
+  }
+  else {
+    console.log("failed to get try currency");
+  }
+  
+  var btcres = await fetch(apilink+"btc.json");
+  if (tryres.ok) {
+    let data = await tryres.json();
+    data = data["btc"];
+    
+  }
+  else {
+    console.log("failed to get btc currency");
+  }
+
+}
 
 Date.prototype.today = function () { 
   return ((this.getDate() < 10)?"0":"") + this.getDate() +"."+(((this.getMonth()+1) < 10)?"0":"") + (this.getMonth()+1) +"."+ this.getFullYear();
