@@ -91,7 +91,6 @@ function newssliderfunction() {
   };
 
 window.onload = function() {
-  datetimeprep();
   newssliderfunction();
   commonstartup();
 }

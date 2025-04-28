@@ -3,12 +3,10 @@ function myFunction(x) {
   document.getElementById("sidebarmenu").classList.toggle("sbmenuc");
 }
 
-function datetimeprep() {
-  document.getElementById("datenum").innerText = "25.04.2025";
-  document.getElementById("timenum").innerHTML = "10.05";
-}
-
 function commonstartup () {
+  document.getElementById("datenum").innerText = "";
+  document.getElementById("timenum").innerHTML = "";
+  window.setInterval(loopfunc, 5000);
   document.getElementById("currencytext").innerHTML = "DOLLAR 38,29 				<font class=\"dec\">%0,02</font> EURO 43,78   				<font class=\"inc\">%0,93</font> PFUND 51,19 	 			<font class=\"inc\">%0,65</font> BITCOIN $93.500,00 			<font class=\"dec\">%-0,25</font> BIST 9.490,90 		 	<font class=\"inc\">%1,92</font> GOLD 3.337,59				<font class=\"inc\">%0,48</font> ZINSEN 48,99				<font class=\"inc\">%0,00</font>";
 
   /*
@@ -54,8 +52,8 @@ async function getCurrencies() {
   }
   
   var btcres = await fetch(apilink+"btc.json");
-  if (tryres.ok) {
-    let data = await tryres.json();
+  if (btcres.ok) {
+    let data = await btcres.json();
     data = data["btc"];
     
   }
@@ -83,9 +81,7 @@ function loopfunc() {
 }
 
 window.onload = function() {
-  datetimeprep();
   commonstartup();
-  window.setInterval(loopfunc, 5000);
 }
 /*
 $(document).ready(function() {

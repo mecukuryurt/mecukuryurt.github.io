@@ -39,6 +39,7 @@ window.onload=function() {
         }
         document.getElementById("theading").innerHTML="WETTERBERİCHT FÜR 7 TAGE";
     });
+    commonstartup();
 }
 
 function calculateWMO(wmo) {
