@@ -29,11 +29,11 @@ window.onload=function() {
             currow += 
                 "<td>" + date[i] + "</td>" + 
                 "<td>" + calculateWMO(weather[i]) + "</td>" + 
-                "<td>" + avgtemp[i] + " °C</td>" +
-                "<td>" + windspd[i] + " km/h</td>" + 
-                "<td>" + winddir[i] + "°</td>" + 
-                "<td>" + (rain[i]+shower[i])+ " mm</td>" + 
-                "<td>" + snow[i] + " cm</td>"
+                "<td>" + avgtemp[i].toFixed(2) + " °C</td>" +
+                "<td>" + windspd[i].toFixed(1) + " km/h</td>" + 
+                "<td>" + winddir[i].toFixed(0) + "°</td>" + 
+                "<td>" + (rain[i]+shower[i]).toFixed(1)+ " mm</td>" + 
+                "<td>" + snow[i].toFixed(1) + " cm</td>"
                 ;
                 rows[i].innerHTML = currow; 
         }
