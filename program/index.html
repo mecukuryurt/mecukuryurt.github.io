@@ -12,12 +12,18 @@
 #define fi first
 #define aov(v) v.begin(), v.end()
 #define sop << " " <<
-#define fastio(); ios_base::sync_with_stdio(false);cin.tie(NULL);   
+#define fastio(); ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define FILESTREAM 1
+#if FILESTREAM
+#define initfstream(infile, outfile) ifstream cin(infile); ofstream cout(outfile);
+#else
+#define initfstream(infile,outfile) ;;
+#endif
 // author: mecukuryurt
 
 using namespace std;
 
-int main() {
+int main() { fastio(); initfstream(".in",".out");
 	
 	return 0;
 }</pre>
